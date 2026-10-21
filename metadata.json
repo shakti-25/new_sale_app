@@ -1,0 +1,10 @@
+{
+  "name": "SalesTrack Enterprise AI - Real-time Field Sales & Analytics",
+  "description": "Real-time field sales tracking, automated GPS coordinate certification, Google Maps Grounding, individual salesperson KPI dashboards, and executive performance analytics with restricted admin access.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

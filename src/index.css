@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Leaflet light theme tweaks */
+.leaflet-container {
+  font-family: inherit;
+  background: #f1f5f9 !important;
+  z-index: 10;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #e2e8f0 !important;
+  padding: 4px !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+}
+
+/* Touch & Mobile UX improvements */
+@media (max-width: 640px) {
+  input, select, textarea, button {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS */
+  }
+}
+
+/* Animations */
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
